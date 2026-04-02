@@ -1,38 +1,26 @@
-# From Search to Computation: Structured Error Tracing
+# LuoshuKit
 
-This repository contains code for the paper:
+LuoshuKit is a lightweight toolkit for inducing structured computational representations in neural networks via blockwise regularization.
 
-**From Search to Computation: Structured Error Tracing via Recursive Luoshu Localization**
+## Overview
 
-Error tracing in neural networks is typically treated as a search problem over internal states. In this work, we study a different regime in which tracing becomes direct computation under structured localization.
+Standard neural networks learn representations without explicit structure.  
+LuoshuKit introduces a simple constraint that encourages feature maps to align with a structured grid (Luoshu), enabling deterministic computation over learned representations.
 
-We compare three tracing regimes:
+No architectural changes are required.
 
-* **A0 (Search):** exhaustive scanning over candidate locations
-* **A1 (Guided Search):** anchor-based reduction of the search space
-* **A2 (Computation):** direct coordinate decoding via anchor–path structure
+## Usage
 
-The central result is a transition from search-based behavior to structured computation.
+Minimal example:
 
-Localization is treated here not just as a saliency signal, but as a representation that determines how tracing is performed. Anchor signals provide coarse regions, while path structure encodes positional identity. Only their combination enables exact coordinate recovery without search.
+```python
+from luoshu_kit.block_nearest import inject
 
-## Code structure
+bridge = inject(
+    model,
+    layer_name="features.2",
+    input_shape=(4, 1, 28, 28),
+    device=device,
+)
 
-* `run_experiment.py` — entry point for running experiments
-* `model_setup.py` — model and structured localization setup
-* `tracing_cost_analysis.py` — tracing cost measurement and analysis
-
-## Reproducing results
-
-Run:
-
-```
-python run_experiment.py
-```
-
-This will reproduce the tracing cost comparison across A0, A1, and A2.
-
-## Notes
-
-All A1 results are reported under a unified guided-search protocol with a fixed tracing-cost definition. Absolute cost may vary across implementations, but the qualitative distinction between search and computation remains unchanged.
-
+loss = criterion(out, y) + bridge.regularize()
