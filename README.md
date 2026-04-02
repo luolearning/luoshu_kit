@@ -24,3 +24,11 @@ bridge = inject(
 )
 
 loss = criterion(out, y) + bridge.regularize()
+```
+
+## Installation
+
+```bash
+git clone https://github.com/luolearning/luoshu_kit.git
+cd luoshu_kit
+```
