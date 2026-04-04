@@ -7,7 +7,7 @@
 ## Effect
 ![Luoshu Effect](luoshu_effect.png)
 
-Blockwise constraints consistently reduce anchor loss, leading to more structured and stable representations.
+Blockwise constraints introduce a local inductive bias that enforces structured representations.
 
 ## Why LuoshuKit?
 
