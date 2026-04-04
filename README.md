@@ -12,6 +12,13 @@ _No architectural changes required._
 Neural networks typically learn unstructured feature maps.  
 LuoshuKit adds a simple local constraint that makes representations more organized, consistent, and easier to analyze.
 
+## Effect
+
+![Luoshu Effect](luoshu_effect.png)
+
+Blockwise constraints consistently induce structural convergence across interpolation schemes, while global regularization fails to do so.
+
+
 ## Installation
 
 Copy and run:
@@ -38,10 +45,3 @@ bridge = inject(
 
 loss = criterion(out, y) + bridge.regularize()
 ```
-
-
-## Effect
-
-![Luoshu Effect](luoshu_effect.png)
-
-Blockwise constraints consistently induce structural convergence across interpolation schemes, while global regularization fails to do so.
