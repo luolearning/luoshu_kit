@@ -2,6 +2,7 @@
 
 **Make your neural network learn structured representations in 3 lines.**
 
+**Reduces anchor loss and enforces structured feature maps.**
 LuoshuKit is a lightweight plug-in that induces structured representations via blockwise regularization.
 
 _No architectural changes required._
@@ -19,7 +20,10 @@ Copy and run:
 git clone https://github.com/luolearning/luoshu_kit.git
 cd luoshu_kit
 pip install -e .
-...
+```
+## Usage
+
+```python
 from luoshu_kit.block_nearest import inject
 
 bridge = inject(
@@ -30,5 +34,5 @@ bridge = inject(
 )
 
 loss = criterion(out, y) + bridge.regularize()
-loss = criterion(out, y) + bridge.regularize()
+
 
