@@ -20,11 +20,6 @@ git clone https://github.com/luolearning/luoshu_kit.git
 cd luoshu_kit
 pip install -e .
 **
-## Usage
-
-Copy and run:
-
-```python
 from luoshu_kit.block_nearest import inject
 
 bridge = inject(
@@ -34,5 +29,6 @@ bridge = inject(
     device=device,
 )
 
+loss = criterion(out, y) + bridge.regularize()
 loss = criterion(out, y) + bridge.regularize()
 
