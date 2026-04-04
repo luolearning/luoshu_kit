@@ -19,7 +19,7 @@ Copy and run:
 git clone https://github.com/luolearning/luoshu_kit.git
 cd luoshu_kit
 pip install -e .
-**
+...
 from luoshu_kit.block_nearest import inject
 
 bridge = inject(
