@@ -6,7 +6,6 @@
 LuoshuKit is a lightweight plug-in that induces structured representations via blockwise regularization.
 
 _No architectural changes required._
-
 ## Effect
 
 ![Luoshu Effect](luoshu_effect.png)
