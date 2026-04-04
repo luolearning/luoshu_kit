@@ -5,7 +5,6 @@
 **Reduces anchor loss and enforces structured feature maps.**
 
 ## Effect
-
 ![Luoshu Effect](luoshu_effect.png)
 
 Blockwise constraints consistently reduce anchor loss, leading to more structured and stable representations.
