@@ -7,7 +7,7 @@
 ## Effect
 ![Luoshu Effect](luoshu_effect.png)
 
-Blockwise constraints introduce a local inductive bias that enforces structured representations.
+Blockwise constraints introduce a local inductive bias that enforces structured representations — not just a training trick.
 
 ## Why LuoshuKit?
 
