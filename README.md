@@ -8,16 +8,13 @@
 
 ![Luoshu Effect](luoshu_effect.png)
 
-Blockwise constraints consistently induce structural convergence across interpolation schemes, while global regularization fails to do so.
-Lower anchor loss indicates more structured and stable feature representations.
-
+Blockwise constraints consistently reduce anchor loss, leading to more structured and stable representations.
 
 ## Why LuoshuKit?
 
-LuoshuKit is a lightweight plug-in that induces structured representations via blockwise regularization, requiring no architectural changes. 
+LuoshuKit induces structured representations via simple blockwise regularization—no architectural changes required.
 
-Neural networks typically learn unstructured feature maps; LuoshuKit introduces a simple local constraint that makes them more organized, consistent, and easier to analyze.
-
+It transforms unstructured feature maps into more organized and consistent forms, making them easier to analyze.
 
 ## Installation
 
