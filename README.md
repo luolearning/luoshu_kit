@@ -1,34 +1,27 @@
 # LuoshuKit
 
-LuoshuKit is a lightweight toolkit for inducing structured computational representations in neural networks via blockwise regularization.
+**Make your neural network learn structured representations in 3 lines.**
 
-## Overview
+LuoshuKit is a lightweight plug-in that induces structured representations via blockwise regularization.
 
-Standard neural networks learn representations without explicit structure.  
-LuoshuKit introduces a simple constraint that encourages feature maps to align with a structured grid (Luoshu), enabling deterministic computation over learned representations.
+_No architectural changes required._
 
-No architectural changes are required.
+---
 
-## Usage
+## Why LuoshuKit?
 
-Minimal example:
+Neural networks typically learn unstructured feature maps.  
+LuoshuKit adds a simple local constraint that makes representations more organized, consistent, and easier to analyze.
 
-```python
-from luoshu_kit.block_nearest import inject
-
-bridge = inject(
-    model,
-    layer_name="features.2",
-    input_shape=(4, 1, 28, 28),
-    device=device,
-)
-
-loss = criterion(out, y) + bridge.regularize()
-```
+---
 
 ## Installation
+
+Copy and run:
 
 ```bash
 git clone https://github.com/luolearning/luoshu_kit.git
 cd luoshu_kit
-```
+pip install -e .
+
+loss = criterion(out, y) + bridge.regularize()
