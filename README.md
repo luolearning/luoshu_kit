@@ -37,6 +37,7 @@ bridge = inject(
 )
 
 loss = criterion(out, y) + bridge.regularize()
+---
 
 
 ## Effect
