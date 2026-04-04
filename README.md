@@ -37,3 +37,15 @@ bridge = inject(
 )
 
 loss = criterion(out, y) + bridge.regularize()
+
+
+---
+
+## 再在它下面接着放这个
+
+```markdown
+## Effect
+
+![Luoshu Effect](luoshu_effect.png)
+
+Blockwise constraints consistently induce structural convergence across interpolation schemes, while global regularization fails to do so.
