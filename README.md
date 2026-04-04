@@ -24,9 +24,9 @@ pip install -e .
 
 ## Usage
 
-
 Minimal example:
 
+```python
 from luoshu_kit.block_nearest import inject
 
 bridge = inject(
