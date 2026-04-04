@@ -19,5 +19,18 @@ LuoshuKit adds a simple local constraint that makes representations more organiz
 
 Copy and run:
 
-```python
+```bash
+git clone https://github.com/luolearning/luoshu_kit.git
+cd luoshu_kit
+pip install -e .
+
+from luoshu_kit.block_nearest import inject
+
+bridge = inject(
+    model,
+    layer_name="features.2",
+    input_shape=(4, 1, 28, 28),
+    device=device,
+)
+
 loss = criterion(out, y) + bridge.regularize()
