@@ -6,14 +6,10 @@ LuoshuKit is a lightweight plug-in that induces structured representations via b
 
 _No architectural changes required._
 
----
-
 ## Why LuoshuKit?
 
 Neural networks typically learn unstructured feature maps.  
 LuoshuKit adds a simple local constraint that makes representations more organized, consistent, and easier to analyze.
-
----
 
 ## Installation
 
@@ -23,14 +19,3 @@ Copy and run:
 git clone https://github.com/luolearning/luoshu_kit.git
 cd luoshu_kit
 pip install -e .
-
-from luoshu_kit.block_nearest import inject
-
-bridge = inject(
-    model,
-    layer_name="features.2",
-    input_shape=(4, 1, 28, 28),
-    device=device,
-)
-
-loss = criterion(out, y) + bridge.regularize()
