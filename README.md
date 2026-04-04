@@ -3,20 +3,20 @@
 **Make your neural network learn structured representations in 3 lines.**
 
 **Reduces anchor loss and enforces structured feature maps.**
-LuoshuKit is a lightweight plug-in that induces structured representations via blockwise regularization.
 
-_No architectural changes required._
 ## Effect
 
 ![Luoshu Effect](luoshu_effect.png)
 
 Blockwise constraints consistently induce structural convergence across interpolation schemes, while global regularization fails to do so.
+Lower anchor loss indicates more structured and stable feature representations.
 
 
 ## Why LuoshuKit?
 
-Neural networks typically learn unstructured feature maps.  
-LuoshuKit adds a simple local constraint that makes representations more organized, consistent, and easier to analyze.
+LuoshuKit is a lightweight plug-in that induces structured representations via blockwise regularization, requiring no architectural changes. 
+
+Neural networks typically learn unstructured feature maps; LuoshuKit introduces a simple local constraint that makes them more organized, consistent, and easier to analyze.
 
 
 ## Installation
