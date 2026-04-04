@@ -21,9 +21,7 @@ git clone https://github.com/luolearning/luoshu_kit.git
 cd luoshu_kit
 pip install -e .
 ```
-## Usage
 
-```python
 ## Usage
 
 Minimal example:
@@ -39,12 +37,3 @@ bridge = inject(
 )
 
 loss = criterion(out, y) + bridge.regularize()
-
-
-## Effect
-
-![Luoshu Effect](luoshu_effect.png)
-
-Blockwise constraints consistently induce structural convergence across interpolation schemes, while global regularization fails to do so.
-
-
