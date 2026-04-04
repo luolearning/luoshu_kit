@@ -19,14 +19,5 @@ LuoshuKit adds a simple local constraint that makes representations more organiz
 
 Copy and run:
 
-```bash
-git clone https://github.com/luolearning/luoshu_kit.git
-cd luoshu_kit
-pip install -e .
-
-## Usage
-
-Copy and run:
-
 ```python
 loss = criterion(out, y) + bridge.regularize()
