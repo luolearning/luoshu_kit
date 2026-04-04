@@ -24,9 +24,9 @@ pip install -e .
 
 ## Usage
 
+
 Minimal example:
 
-```python
 from luoshu_kit.block_nearest import inject
 
 bridge = inject(
@@ -39,11 +39,6 @@ bridge = inject(
 loss = criterion(out, y) + bridge.regularize()
 
 
----
-
-## 再在它下面接着放这个
-
-```markdown
 ## Effect
 
 ![Luoshu Effect](luoshu_effect.png)
