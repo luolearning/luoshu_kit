@@ -42,5 +42,4 @@ pip install -e .
 # Minimal example (python)
 ```
 from luoshu_kit.luoshu_kit_a2_proto import inject
-
 bridge = inject(model, layer_name="layer2")
