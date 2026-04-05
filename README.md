@@ -26,7 +26,6 @@ ResNet layer2: A0 → A1 → A2
 
 ![Early](early_signal.png)
 
-Blockwise constraints enforce structured convergence.
 
 ---
 
