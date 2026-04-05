@@ -1,7 +1,34 @@
 # LuoshuKit
 
-LuoshuKit is a lightweight toolkit for introducing structure into neural network representations.
+Make your neural network learn structured representations in 3 lines.
 
-With only a few lines of code, it adds structured constraints during training, encouraging more organized and stable feature maps.
+Reduces anchor loss and enforces structured feature maps.
 
-This repository contains a minimal prototype and a working demo, designed to show how the idea can be integrated into standard pipelines.
+---
+
+## ResNet Structural Signal
+
+![ResNet](resnet_a0_a1_a2_structure.png)
+
+ResNet layer2: A0 → A1 → A2
+
+- A0: no structure  
+- A1: anchor only  
+- A2: path activated  
+
+---
+
+## Early Signal
+
+![Early](early_blockwise_prototype.png)
+
+Blockwise constraints enforce structured convergence.
+
+---
+
+## Usage
+
+```python
+from luoshu_kit.luoshu_kit_a2_proto import inject
+
+bridge = inject(model, layer_name="layer2")
