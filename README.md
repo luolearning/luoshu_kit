@@ -1,9 +1,9 @@
 # Luoshu Kit
 
 
-**LuoshuKit is a plug-in.Inject it into any mode.**
+**LuoshuKit is a plug-in. Inject it into any model.**
 
-**Now things become locatable..**
+**Now things are locatable.**
 
 
 ---
