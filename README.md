@@ -1,7 +1,8 @@
 # Luoshu Kit
 
 
-**With anchor and path, things become locatable.**
+**LuoshuKit is a plug-in. It can be injected into any existing model.
+With anchor and path, things become locatable.**
 
 
 ---
