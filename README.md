@@ -28,7 +28,14 @@ Blockwise constraints enforce structured convergence.
 
 ## Usage
 
-```python
+LuoshuKit works as a plug-in. Simply inject it into an existing model:Install:
+
+```bash
+git clone https://github.com/luolearning/luoshu_kit.git
+cd luoshu_kit
+pip install -e .
+```
+Minimal example (python)
 from luoshu_kit.luoshu_kit_a2_proto import inject
 
 bridge = inject(model, layer_name="layer2")
