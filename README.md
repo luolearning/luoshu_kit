@@ -1,24 +1,7 @@
 # LuoshuKit
 
-Make neural networks learn **structured representations** in 3 lines.
+LuoshuKit is a lightweight toolkit for introducing structure into neural network representations.
 
-LuoshuKit introduces **anchor–path constraints** that transform feature learning
-from **search-based behavior into structured computation**.
+With only a few lines of code, it adds structured constraints during training, encouraging more organized and stable feature maps.
 
----
-
-## Quick Start
-
-```python
-from luoshu_kit import inject
-
-bridge = inject(model, layer_name="layer1", input_shape=(1,3,32,32))
-loss = ce_loss + bridge.regularize()
-```
-
-## What it does
-Enforces structured feature maps
-Encodes positional identity via path structure
-Enables direct coordinate decoding (A2 regime)
-Transforms learning from search → computation
-
+This repository contains a minimal prototype and a working demo, designed to show how the idea can be integrated into standard pipelines.
