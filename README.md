@@ -1,43 +1,24 @@
 # LuoshuKit
 
-**Make your neural network learn structured representations in 3 lines.**
+Make neural networks learn **structured representations** in 3 lines.
 
-**Reduces anchor loss and enforces structured feature maps.**
+LuoshuKit introduces **anchor–path constraints** that transform feature learning
+from **search-based behavior into structured computation**.
 
-## Effect
-![Luoshu Effect](luoshu_effect.png)
+---
 
-Blockwise constraints introduce a local inductive bias that enforces structured representations — not just a training trick.
-
-## Why LuoshuKit?
-
-LuoshuKit induces structured representations via simple blockwise regularization—no architectural changes required.
-
-It transforms unstructured feature maps into more organized and consistent forms, making them easier to analyze.
-
-## Installation
-
-Copy and run:
-
-```bash
-git clone https://github.com/luolearning/luoshu_kit.git
-cd luoshu_kit
-pip install -e .
-```
-
-## Usage
-
-Minimal example:
+## Quick Start
 
 ```python
-from luoshu_kit.block_nearest import inject
+from luoshu_kit import inject
 
-bridge = inject(
-    model,
-    layer_name="features.2",
-    input_shape=(4, 1, 28, 28),
-    device=device,
-)
-
-loss = criterion(out, y) + bridge.regularize()
+bridge = inject(model, layer_name="layer1", input_shape=(1,3,32,32))
+loss = ce_loss + bridge.regularize()
 ```
+
+## What it does
+Enforces structured feature maps
+Encodes positional identity via path structure
+Enables direct coordinate decoding (A2 regime)
+Transforms learning from search → computation
+
