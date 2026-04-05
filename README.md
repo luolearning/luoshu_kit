@@ -1,6 +1,6 @@
 # LuoshuKit
 
-**With anchor and path, things become locatable.
+**your sentence**
 ---
 
 ## ResNet Structural Signal
