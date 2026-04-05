@@ -10,6 +10,8 @@
 
 ## ResNet Structural Signal
 
+Tested on ResNet (layer2) as a representative convolutional backbone.
+
 ![ResNet](resnet_a0_a1_a2_structure.png)
 
 ResNet layer2: A0 → A1 → A2
