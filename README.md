@@ -1,8 +1,8 @@
 # LuoshuKit
 
-Make your neural network learn structured representations in 3 lines.
+Inject structure into your model.
 
-Reduces anchor loss and enforces structured feature maps.
+Make internal representations observable and localizable.
 
 ---
 
