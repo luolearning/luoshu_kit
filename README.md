@@ -42,7 +42,6 @@ pip install -e .
 
 ---
 ```md
-## Minimal example (python)
 
 ```python
 from luoshu_kit.luoshu_kit_a2_proto import inject
