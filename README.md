@@ -28,7 +28,6 @@ Blockwise constraints enforce structured convergence.
 
 ## Usage
 
-
 LuoshuKit works as a plug-in. Simply inject it into an existing model.
 
 Install:
@@ -40,10 +39,8 @@ pip install -e .
 ```
 ## Minimal example (python)
 
----
 ```md
 
-```python
 from luoshu_kit.luoshu_kit_a2_proto import inject
 
 bridge = inject(model, layer_name="layer2")
