@@ -3,7 +3,7 @@
 
 **LuoshuKit is a plug-in. Inject it into any model.**
 
-**rom now on, every value in AI has its own address..**
+**From now on, every value in AI has an address.**
 
 
 ---
