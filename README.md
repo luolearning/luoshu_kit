@@ -32,8 +32,6 @@ Blockwise constraints enforce structured convergence.
 
 ## Usage
 
-LuoshuKit is a plug-in. It can be injected into any existing model.
-
 Install:
 
 ```bash
