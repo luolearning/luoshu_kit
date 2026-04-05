@@ -1,6 +1,6 @@
 # LuoshuKit
 
-** Add anchor and path — now you can locate things.
+**Add anchor and path — now you can locate things.
 
 ---
 
