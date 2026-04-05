@@ -1,8 +1,6 @@
 # LuoshuKit
 
-Inject structure into your model.
-
-Make internal representations observable and localizable.
+** Add anchor and path — now you can locate things.
 
 ---
 
