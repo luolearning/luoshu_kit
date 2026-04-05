@@ -3,7 +3,7 @@
 
 **LuoshuKit is a plug-in. Inject it into any model.**
 
-**A mechanistic interpretability layer — every value now has a computed address, not searched.**
+**A mechanistic interpretability layer — every value now has a computed address instead of being searched.**
 
 
 ---
