@@ -1,9 +1,9 @@
 # Luoshu Kit
 
 
-**LuoshuKit is a plug-in. Inject it into any model.**
+**LuoshuKit is a plug-in. Inject it into any model.From now on, every value in AI has an address.**
 
-**From now on, every value in AI has an address.**
+**A mechanistic interpretability layer — every value now has an address.**
 
 
 ---
