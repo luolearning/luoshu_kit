@@ -5,7 +5,6 @@
 
 **A mechanistic interpretability layer — every value now has a computed address instead of being searched.**
 
-
 ---
 
 LuoshuKit implements a structured addressing layer for neural representations,
