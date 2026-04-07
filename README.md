@@ -11,7 +11,7 @@ where internal values are assigned addresses that can be directly decoded rather
 
 ## ResNet Structural Signal
 
-Tested on ResNet (layer2) as a representative convolutional backbone.
+Tested on ResNet (layer2) as a representative convolutional backbone, using a structured addressing mechanism derived from Luoshu-like principles.
 
 ![ResNet](resnet_a0_a1_a2_structure.png)
 
