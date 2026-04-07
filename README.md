@@ -1,4 +1,4 @@
-# Luoshu Kit V0.2 Transformers (PoC)
+# Luoshu Kit V0.1 CNN -> ResNet
 
 ## LuoshuKit is a plug-in. Inject it into any model.
 
