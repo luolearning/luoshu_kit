@@ -13,6 +13,9 @@ where internal values are assigned addresses that can be directly decoded rather
 
 Tested on ResNet (layer2) as a representative convolutional backbone, using a structured addressing mechanism derived from Luoshu-like principles.
 
+For the full Luoshu addressing system (V0.2), see the Transformer-based implementation:
+https://github.com/luolearning/luoshu-kit-transformers
+
 ![ResNet](resnet_a0_a1_a2_structure.png)
 
 ResNet layer2: A0 → A1 → A2
