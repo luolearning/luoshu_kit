@@ -5,10 +5,11 @@
 
 **A mechanistic interpretability layer — every value now has a computed address instead of being searched.**
 
-LuoshuKit implements a structured addressing layer for neural representations,
-where internal values are assigned addresses that can be directly decoded rather than located through search.
 
 ---
+
+LuoshuKit implements a structured addressing layer for neural representations,
+where internal values are assigned addresses that can be directly decoded rather than located through search.
 
 
 ## ResNet Structural Signal
