@@ -7,6 +7,8 @@
 LuoshuKit implements a structured addressing layer for neural representations,
 where internal values are assigned addresses that can be directly decoded rather than located through search.
 
+---
+
 ## ResNet Structural Signal
 
 Tested on ResNet (layer2) as a representative convolutional backbone.
