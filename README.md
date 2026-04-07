@@ -1,4 +1,4 @@
-# Luoshu Kit
+# Luoshu Kit V0.1 CNN --> ResNet
 
 
 **LuoshuKit is a plug-in. Inject it into any model.**
